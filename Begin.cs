@@ -14,7 +14,7 @@ namespace NyxVision
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl(Settings.Settings.AVALIAAE_URI);
             driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driverQuit = true;
         }
 
