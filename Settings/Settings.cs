@@ -8,6 +8,6 @@ namespace NyxVision.Settings
 {
     public static class Settings
     {
-        public static string AVALIAAE_URI = "https://google.com";
+        public static string AVALIAAE_URI = "https://avaliaae.com.br";
     }
 }
