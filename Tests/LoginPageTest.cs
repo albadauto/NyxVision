@@ -10,6 +10,11 @@ namespace NyxVision.Tests
 {
     public class LoginPageTest : Begin
     {
+        public LoginPageTest()
+        {
+            this.AuthenticateTest();
+            this.TextBoxTest();
+        }
         [Test]
         public void AuthenticateTest()
         {
@@ -21,7 +26,7 @@ namespace NyxVision.Tests
         [Test]
         public void TextBoxTest()
         {
-            int limit = 12;
+            int limit = 20;
             driver.FindElement(By.CssSelector(".btn-light")).Click();
 
             var box = driver.FindElement(By.CssSelector("#fisic-people > form:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)"));
